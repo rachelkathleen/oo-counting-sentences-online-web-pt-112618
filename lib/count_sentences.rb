@@ -16,6 +16,6 @@ class String
 
   def count_sentences
     #self.count(".") + self.count("!") + self.count("?")
-    self.split.map {|word| word.end_with?("!", ".", "?")}
+    self.split.each {|word| word.end_with?("!", ".", "?")}
   end
 end
